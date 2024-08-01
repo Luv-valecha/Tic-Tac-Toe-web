@@ -28,7 +28,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/tic-tac-toe.git
+    [git clone https://github.com/yourusername/tic-tac-toe.git](https://github.com/Luv-valecha/Tic_Tac_Toe_web.git)
     ```
 
 2. **Navigate to the project directory:**
