@@ -1,0 +1,85 @@
+.light {
+    background: darkseagreen;
+    text-align: center;
+}
+
+.dark {
+    background-color: rgb(23, 22, 22);
+    text-align: center;
+}
+
+#main_heading {
+    height: 125px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+#game_area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+
+#main_game {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.game_btn {
+    background-color: Azure;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 200%;
+    font-weight: bold;
+    color: crimson;
+}
+
+#win {
+    margin-bottom: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    font-weight: bold;
+    color: rgb(224, 23, 23);
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    display: none;
+}
+
+#winningtitle {
+    margin-bottom: 40px;
+}
+
+.new_game {
+    height: 40px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 10%;
+    background-color: black;
+    color: white;
+}
+
+#turn {
+    margin-bottom: 20px;
+    text-shadow: 2px 1.5px rgba(23, 23, 23, 0.392);
+}
+
+#mode {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: azure;
+    background-color: black;
+}
