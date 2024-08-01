@@ -54,6 +54,7 @@ To run this project locally, follow these steps:
 - **HTML**: The structure of the web pages.
 - **CSS**: The styling of the web pages.
 - **JavaScript**: The logic and interactivity of the game.
+- win.jpg and heading.gif are image files required for the web page.
 
 ## Contributing
 
