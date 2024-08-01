@@ -70,6 +70,6 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 ## Contact
 
 For any questions or suggestions, please contact:
-- GitHub: [yourusername](https://github.com/yourusername)
+- GitHub: [Luv-v](https://github.com/Luv-valecha)
 
 Enjoy playing Tic Tac Toe!
