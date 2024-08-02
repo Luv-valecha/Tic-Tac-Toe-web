@@ -82,7 +82,12 @@ function checkwinner(winning_patterns) {
             }
         }
         if (check) {
-            if ((game_btns[pattern[0]].innerText == game_btns[pattern[1]].innerText) && (game_btns[pattern[1]].innerText == game_btns[pattern[2]].innerText)) game_over("win");
+            if ((game_btns[pattern[0]].innerText == game_btns[pattern[1]].innerText) && (game_btns[pattern[1]].innerText == game_btns[pattern[2]].innerText)){
+                game_over("win");
+                game_btns[pattern[0]].style.color="green";
+                game_btns[pattern[1]].style.color="green";
+                game_btns[pattern[2]].style.color="green";
+            }
         }
     })
 }
