@@ -107,6 +107,7 @@ function reset() {
         btn.disabled = false;
         btn.innerText = "";
         btn.style.backgroundColor = "Azure";
+        btn.style.color="crimson";
     })
     turn='X';
     dispturn.innerText = "TURN: X";
