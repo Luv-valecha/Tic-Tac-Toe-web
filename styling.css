@@ -1,11 +1,15 @@
 .light {
     background: darkseagreen;
     text-align: center;
+    transition: all 400ms ease-in;
+    color: black;
 }
 
 .dark {
     background-color: rgb(23, 22, 22);
     text-align: center;
+    transition: all 500ms ease-in;
+    color: white;
 }
 
 #main_heading {
@@ -28,9 +32,19 @@
     flex-wrap: wrap;
 }
 
-.game_btn {
+.light .game_btn {
     background-color: Azure;
     border: 2px solid black;
+    transition: all 500ms ease-in;
+}
+
+.dark .game_btn {
+    background-color: rgb(100, 99, 99);
+    border: 1px solid white;
+    transition: all 500ms ease-in;
+}
+
+.game_btn {
     height: 100px;
     width: 100px;
     border-radius: 20px;
@@ -40,18 +54,28 @@
     color: crimson;
 }
 
+.game_btn:hover {
+    background-color: rgb(86, 167, 205);
+    transition: all 250ms ease-in;
+}
+
+.game_btn:active {
+    background-color: rgb(205, 94, 86);
+}
+
 #win {
     margin-bottom: 90px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
     font-weight: bold;
     color: rgb(224, 23, 23);
-    text-shadow: 
-        -1px -1px 0 #000,  
+    text-shadow:
+        -1px -1px 0 #000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
     display: none;
+    transition: all 250ms ease-in;
 }
 
 #winningtitle {
@@ -61,16 +85,55 @@
 .new_game {
     height: 40px;
     width: 120px;
-    border: 2px solid black;
     border-radius: 10px;
     font-weight: 10%;
+}
+
+.light .new_game{
     background-color: black;
     color: white;
+    border: 2px solid black;
+}
+
+.dark .new_game{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.light .new_game:hover {
+    background-color: rgb(36, 35, 35);
+}
+
+.dark .new_game:hover {
+    background-color: rgb(215, 111, 111);
+    transition: all 300ms ease-in;
 }
 
 #turn {
     margin-bottom: 20px;
     text-shadow: 2px 1.5px rgba(23, 23, 23, 0.392);
+    transition: all 300ms ease-in;
+}
+
+#giticon{
+    position: absolute;
+    right: 130px;
+    bottom: 50px;
+    font-size:30px;
+}
+
+.light #giticon{
+    color: black;
+}
+
+.dark #giticon{
+    color: white;
+}
+
+#giticon:hover{
+    font-size: 40px;
+    transition: all 100ms ease-in;
 }
 
 #mode {
@@ -82,4 +145,20 @@
     border-radius: 50%;
     color: azure;
     background-color: black;
+}
+
+#mode i {
+    font-size: 24px;
+}
+
+.light #mode {
+    background-color: black;
+    color: white;
+    transition: all 500ms ease-in;
+}
+
+.dark #mode {
+    background-color: white;
+    color: black;
+    transition: all 500ms ease-in;
 }

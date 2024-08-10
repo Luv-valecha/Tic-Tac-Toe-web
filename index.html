@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIC-TAC-TOE</title>
     <link href="styling.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="light">
     <header>
         <img id=main_heading src="heading.gif">
-        <button id="mode">DARK MODE</button>
+        <a href="https://github.com/Luv-valecha/Tic-Tac-Toe-web">
+            <i class="fa-brands fa-github" id="giticon"></i>
+        </a>
+        <button id="mode"><i class="fa-solid fa-moon"></i></button>
     </header>
     <main>
         <div id="win">
@@ -32,7 +38,7 @@
             </div>
         </div>
         <h2 id="turn">TURN: X</h3>
-        <button class="new_game">RESET GAME</button>
+            <button class="new_game">RESET GAME</button>
     </main>
     <footer></footer>
     <script src="script.js"></script>

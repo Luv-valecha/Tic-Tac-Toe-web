@@ -36,40 +36,12 @@ modebtn.addEventListener("click", () => {
     if (body.className == "light") {
         body.classList.add("dark");
         body.classList.remove("light");
-        dispturn.style.color = "white";
-        modebtn.style.backgroundColor = "white";
-        modebtn.style.color = "black";
-        modebtn.innerText = "LIGHT MODE";
-        reset_btns.forEach((btn) => {
-            btn.style.backgroundColor = "white";
-            btn.style.color = "black";
-            btn.style.border = "2px solid white";
-        })
-        game_btns.forEach((btn) => {
-            if (!btn.disabled) {
-                btn.style.backgroundColor = "rgb(100, 99, 99)";
-                btn.border = "2px solid white";
-            }
-        })
+        modebtn.innerHTML='<i class="fa-solid fa-sun"></i>';
     }
     else {
         body.classList.remove("dark");
         body.classList.add("light");
-        dispturn.style.color = "black";
-        modebtn.style.backgroundColor = "black";
-        modebtn.style.color = "white";
-        modebtn.innerText = "DARK MODE";
-        reset_btns.forEach((btn) => {
-            btn.style.backgroundColor = "black";
-            btn.style.color = "white";
-            btn.style.border = "2px solid black";
-        })
-        game_btns.forEach((btn) => {
-            if (!btn.disabled) {
-                btn.style.backgroundColor = "Azure";
-                btn.border = "2px solid black";
-            }
-        })
+        modebtn.innerHTML='<i class="fa-solid fa-moon"></i>';
     }
 })
 function checkwinner(winning_patterns) {
@@ -105,12 +77,12 @@ function game_over(verdict) {
 function reset() {
     game_btns.forEach((btn) => {
         btn.disabled = false;
-        btn.innerText = "";
-        btn.style.backgroundColor = "Azure";
-        btn.style.color="crimson";
+        btn.innerHTML = "";
+        btn.style.backgroundColor = "";
+        btn.style.color="";
     })
     turn='X';
-    dispturn.innerText = "TURN: X";
+    dispturn.innerHTML = "TURN: X";
     win.style.display = "None";
     moves=0;
 }
